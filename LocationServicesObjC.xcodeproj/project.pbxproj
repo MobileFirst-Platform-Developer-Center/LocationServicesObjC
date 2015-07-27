@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19983C241AF8B8A60005363F /* WorklightAPI in Resources */ = {isa = PBXBuildFile; fileRef = 19983C231AF8B8A60005363F /* WorklightAPI */; };
 		19983C261AF8B8C10005363F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 19983C251AF8B8C10005363F /* libc++.dylib */; };
 		19983C271AF8B8C70005363F /* sqlcipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F7C5F91AB07A0500953B85 /* sqlcipher.framework */; };
 		19983C291AF8B8CA0005363F /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19983C281AF8B8CA0005363F /* IBMMobileFirstPlatformFoundation.framework */; };
@@ -29,11 +28,11 @@
 		5EFDEF72181580EB002ECA4A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFDEF71181580EA002ECA4A /* libz.dylib */; };
 		5EFDF10718159BF2002ECA4A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFDF10618159BF2002ECA4A /* CoreLocation.framework */; };
 		82922BE51B0DC4A7004FE437 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82922BE31B0DC4A7004FE437 /* Main_iPad.storyboard */; };
-		82DD1D7D1AEFC02300E1CC23 /* worklight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82DD1D7B1AEFC02300E1CC23 /* worklight.plist */; };
+		82B907D21B662EEC00E48493 /* worklight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82B907D01B662EEC00E48493 /* worklight.plist */; };
+		82B907D31B662EEC00E48493 /* WorklightAPI in Resources */ = {isa = PBXBuildFile; fileRef = 82B907D11B662EEC00E48493 /* WorklightAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19983C231AF8B8A60005363F /* WorklightAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WorklightAPI; sourceTree = "<group>"; };
 		19983C251AF8B8C10005363F /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		19983C281AF8B8CA0005363F /* IBMMobileFirstPlatformFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMMobileFirstPlatformFoundation.framework; path = WorklightAPI/Frameworks/IBMMobileFirstPlatformFoundation.framework; sourceTree = "<group>"; };
 		5E6E84AD181723EC0010671C /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
@@ -61,7 +60,8 @@
 		5EFDEF71181580EA002ECA4A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		5EFDF10618159BF2002ECA4A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		82922BE41B0DC4A7004FE437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		82DD1D7B1AEFC02300E1CC23 /* worklight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = worklight.plist; sourceTree = "<group>"; };
+		82B907D01B662EEC00E48493 /* worklight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = worklight.plist; sourceTree = "<group>"; };
+		82B907D11B662EEC00E48493 /* WorklightAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WorklightAPI; sourceTree = "<group>"; };
 		82F7C5F91AB07A0500953B85 /* sqlcipher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sqlcipher.framework; path = WorklightAPI/Frameworks/sqlcipher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,8 +93,8 @@
 		5EFDEEC318157966002ECA4A = {
 			isa = PBXGroup;
 			children = (
-				19983C231AF8B8A60005363F /* WorklightAPI */,
-				82DD1D7B1AEFC02300E1CC23 /* worklight.plist */,
+				82B907D01B662EEC00E48493 /* worklight.plist */,
+				82B907D11B662EEC00E48493 /* WorklightAPI */,
 				5EFDEED518157966002ECA4A /* LocationServicesObjC */,
 				5EFDEECE18157966002ECA4A /* Frameworks */,
 				5EFDEECD18157966002ECA4A /* Products */,
@@ -211,12 +211,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82DD1D7D1AEFC02300E1CC23 /* worklight.plist in Resources */,
-				19983C241AF8B8A60005363F /* WorklightAPI in Resources */,
 				5EFDEEEB18157966002ECA4A /* Images.xcassets in Resources */,
 				82922BE51B0DC4A7004FE437 /* Main_iPad.storyboard in Resources */,
 				5EFDEEE318157966002ECA4A /* Main_iPhone.storyboard in Resources */,
+				82B907D31B662EEC00E48493 /* WorklightAPI in Resources */,
 				5EFDEEDA18157966002ECA4A /* InfoPlist.strings in Resources */,
+				82B907D21B662EEC00E48493 /* worklight.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

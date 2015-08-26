@@ -146,7 +146,7 @@ extern NSMutableDictionary *piggyBackData;
  * @par If the server returns a successful response, the <code>onSuccess</code> method is called. If an error occurs, the <code>onFailure</code> method is called.
  *
  * @param delegate A class that conforms to the WLDelegate protocol.
- * @param options Optional, can be nil. Used to set the timeout while connecting to the server. In this dictionary the user puts key "timeout" (milliseconds).
+ * @param options Optional, can be nil. Used to set the timeout while connecting to the server and/or to set the application userId which is used by Push service. In this dictionary the user puts key "timeout" (milliseconds) to set the timeout or the key "appUserId" (NSString) to set the application UserId.
  */
 -(void) wlConnectWithDelegate:(id <WLDelegate>)delegate options:(NSDictionary *)options;
 

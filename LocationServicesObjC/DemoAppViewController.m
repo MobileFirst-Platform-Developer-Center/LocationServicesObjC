@@ -35,6 +35,12 @@
 NSString* start = @"Start Acquisition";
 NSString* stop = @"Stop Acquisition";
 
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    self.title = @"Location Services";
+}
+
 -(id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     

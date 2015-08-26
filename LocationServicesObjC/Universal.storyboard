@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rmm-DP-cbh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kiP-RV-A4h">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Demo App View Controller-->
         <scene sceneID="B3P-DT-SBa">
             <objects>
-                <viewController id="rmm-DP-cbh" sceneMemberID="viewController">
+                <viewController id="rmm-DP-cbh" customClass="DemoAppViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U5j-g2-Xe7"/>
                         <viewControllerLayoutGuide type="bottom" id="TpM-EG-5Zm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Q39-sE-llu">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybl-ZD-4aS">
-                                <rect key="frame" x="16" y="98" width="568" height="323"/>
+                                <rect key="frame" x="16" y="82" width="382" height="358"/>
                                 <string key="text">After 3 seconds, if you haven't moved more than 50 meters, an alert will be displayed and an event will be sent to the server.
 
 Once you have moved more than 200 meters, an alert will be displayed and ant event will be sent to the server.
@@ -30,9 +30,12 @@ Once you have moved more than 200 meters, an alert will be displayed and ant eve
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="16" y="98" width="992" height="215"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPA-w9-KEv">
-                                <rect key="frame" x="185" y="429" width="230" height="51"/>
+                                <rect key="frame" x="92" y="448" width="230" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Start Acquisition">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,91 +43,104 @@ Once you have moved more than 200 meters, an alert will be displayed and ant eve
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="397" y="321" width="230" height="51"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="rmm-DP-cbh" eventType="touchUpInside" id="HRt-ov-Ykv"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdZ-4x-EMZ">
-                                <rect key="frame" x="16" y="488" width="149" height="39"/>
+                                <rect key="frame" x="16" y="511" width="149" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="16" y="385" width="149" height="39"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUI-SD-7Ok">
-                                <rect key="frame" x="16" y="535" width="130" height="39"/>
+                                <rect key="frame" x="16" y="561" width="130" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="16" y="435" width="130" height="39"/>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxxxxxxxxxx" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcM-pr-nBH">
-                                <rect key="frame" x="183" y="492" width="179" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcM-pr-nBH">
+                                <rect key="frame" x="183" y="511" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MobileFirst Location Services" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7b4-kR-zQC">
-                                <rect key="frame" x="30" y="28" width="540" height="51"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <color key="textColor" red="0.043137254901960784" green="0.37647058823529411" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact">
-                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="183" y="384" width="179" height="39"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timestamp:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdU-Pa-biD">
-                                <rect key="frame" x="16" y="581" width="165" height="39"/>
+                                <rect key="frame" x="16" y="611" width="165" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="16" y="486" width="165" height="39"/>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxxxxxxxxxx" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FQ-0b-w8w">
-                                <rect key="frame" x="16" y="628" width="416" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FQ-0b-w8w">
+                                <rect key="frame" x="16" y="661" width="237" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="16" y="536" width="416" height="39"/>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxxxxxxxxxx" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctz-WQ-qea">
-                                <rect key="frame" x="183" y="544" width="179" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctz-WQ-qea">
+                                <rect key="frame" x="183" y="523" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="183" y="436" width="179" height="39"/>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7b4-kR-zQC" firstAttribute="top" secondItem="U5j-g2-Xe7" secondAttribute="bottom" constant="8" id="1hh-Lc-j2E"/>
                             <constraint firstItem="TcM-pr-nBH" firstAttribute="top" secondItem="bPA-w9-KEv" secondAttribute="bottom" constant="12" id="2cd-cp-eh0"/>
-                            <constraint firstItem="4FQ-0b-w8w" firstAttribute="top" secondItem="vdU-Pa-biD" secondAttribute="bottom" constant="8" id="4Mi-YC-oRM"/>
-                            <constraint firstAttribute="centerX" secondItem="7b4-kR-zQC" secondAttribute="centerX" id="4o1-Jx-aeC"/>
+                            <constraint firstItem="4FQ-0b-w8w" firstAttribute="top" secondItem="vdU-Pa-biD" secondAttribute="bottom" constant="11" id="4Mi-YC-oRM"/>
                             <constraint firstAttribute="centerX" secondItem="bPA-w9-KEv" secondAttribute="centerX" id="5H7-c3-jfM"/>
                             <constraint firstItem="TcM-pr-nBH" firstAttribute="leading" secondItem="PdZ-4x-EMZ" secondAttribute="trailing" constant="18" id="5yA-PD-pcf"/>
-                            <constraint firstItem="vdU-Pa-biD" firstAttribute="top" secondItem="FUI-SD-7Ok" secondAttribute="bottom" constant="8" id="Eny-Rp-Ha8"/>
-                            <constraint firstItem="ybl-ZD-4aS" firstAttribute="top" secondItem="7b4-kR-zQC" secondAttribute="bottom" constant="20" id="FTp-H8-ASx"/>
+                            <constraint firstItem="vdU-Pa-biD" firstAttribute="top" secondItem="FUI-SD-7Ok" secondAttribute="bottom" constant="12" id="Eny-Rp-Ha8"/>
                             <constraint firstItem="vdU-Pa-biD" firstAttribute="leading" secondItem="4FQ-0b-w8w" secondAttribute="leading" id="Kw9-5Q-l3b"/>
-                            <constraint firstItem="PdZ-4x-EMZ" firstAttribute="top" secondItem="bPA-w9-KEv" secondAttribute="bottom" constant="8" id="L3w-Hy-rta"/>
+                            <constraint firstItem="PdZ-4x-EMZ" firstAttribute="top" secondItem="bPA-w9-KEv" secondAttribute="bottom" constant="12" id="L3w-Hy-rta"/>
                             <constraint firstItem="vdU-Pa-biD" firstAttribute="leading" secondItem="FUI-SD-7Ok" secondAttribute="leading" id="Tan-Va-vV0"/>
                             <constraint firstItem="ctz-WQ-qea" firstAttribute="leading" secondItem="TcM-pr-nBH" secondAttribute="leading" id="Vjw-NX-Ybu"/>
                             <constraint firstAttribute="centerX" secondItem="ybl-ZD-4aS" secondAttribute="centerX" id="bZL-Ux-iTO"/>
                             <constraint firstItem="ctz-WQ-qea" firstAttribute="trailing" secondItem="TcM-pr-nBH" secondAttribute="trailing" id="cOR-Sk-FKn"/>
-                            <constraint firstItem="FUI-SD-7Ok" firstAttribute="top" secondItem="PdZ-4x-EMZ" secondAttribute="bottom" constant="8" id="cfe-WB-kkt"/>
+                            <constraint firstItem="FUI-SD-7Ok" firstAttribute="top" secondItem="PdZ-4x-EMZ" secondAttribute="bottom" constant="11" id="cfe-WB-kkt"/>
                             <constraint firstItem="ctz-WQ-qea" firstAttribute="leading" secondItem="FUI-SD-7Ok" secondAttribute="trailing" constant="37" id="dZC-8w-23G"/>
-                            <constraint firstItem="ctz-WQ-qea" firstAttribute="top" secondItem="TcM-pr-nBH" secondAttribute="bottom" constant="13" id="hgd-1A-IBS"/>
+                            <constraint firstItem="ctz-WQ-qea" firstAttribute="top" secondItem="TcM-pr-nBH" secondAttribute="bottom" constant="12" id="hgd-1A-IBS"/>
                             <constraint firstItem="ctz-WQ-qea" firstAttribute="trailing" secondItem="4FQ-0b-w8w" secondAttribute="trailing" constant="-70" id="hjI-sf-U58"/>
+                            <constraint firstItem="ybl-ZD-4aS" firstAttribute="top" secondItem="U5j-g2-Xe7" secondAttribute="bottom" constant="18" id="iKt-tI-s46"/>
                             <constraint firstItem="bPA-w9-KEv" firstAttribute="top" secondItem="ybl-ZD-4aS" secondAttribute="bottom" constant="8" id="iPz-fO-DdU"/>
                             <constraint firstItem="PdZ-4x-EMZ" firstAttribute="leading" secondItem="FUI-SD-7Ok" secondAttribute="leading" id="jJk-Md-6xv"/>
                             <constraint firstItem="ybl-ZD-4aS" firstAttribute="trailing" secondItem="Q39-sE-llu" secondAttribute="trailingMargin" id="ory-t4-X5Z"/>
@@ -132,10 +148,36 @@ Once you have moved more than 200 meters, an alert will be displayed and ant eve
                             <constraint firstItem="ybl-ZD-4aS" firstAttribute="leading" secondItem="Q39-sE-llu" secondAttribute="leadingMargin" id="zDo-J8-3aa"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9QN-wj-W6M"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="button" destination="bPA-w9-KEv" id="wfz-yn-4Ej"/>
+                        <outlet property="latLabel" destination="ctz-WQ-qea" id="oqF-HF-c3t"/>
+                        <outlet property="lonLabel" destination="TcM-pr-nBH" id="N3e-8d-ev5"/>
+                        <outlet property="timestamp" destination="4FQ-0b-w8w" id="Cxa-wH-f87"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E0g-jw-a0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="309" y="360"/>
+            <point key="canvasLocation" x="1092" y="324.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1o9-yR-8gx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kiP-RV-A4h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dy3-tS-Fxa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rmm-DP-cbh" kind="relationship" relationship="rootViewController" id="KVq-7Z-W2b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aBG-Rg-sUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="324.75"/>
         </scene>
     </scenes>
 </document>

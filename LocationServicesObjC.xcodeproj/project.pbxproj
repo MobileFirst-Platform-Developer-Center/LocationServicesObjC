@@ -17,7 +17,6 @@
 		5EFDEEDA18157966002ECA4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EFDEED818157966002ECA4A /* InfoPlist.strings */; };
 		5EFDEEDC18157966002ECA4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFDEEDB18157966002ECA4A /* main.m */; };
 		5EFDEEE018157966002ECA4A /* DemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFDEEDF18157966002ECA4A /* DemoAppDelegate.m */; };
-		5EFDEEE318157966002ECA4A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFDEEE118157966002ECA4A /* Main_iPhone.storyboard */; };
 		5EFDEEE918157966002ECA4A /* DemoAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFDEEE818157966002ECA4A /* DemoAppViewController.m */; };
 		5EFDEEEB18157966002ECA4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFDEEEA18157966002ECA4A /* Images.xcassets */; };
 		5EFDEF68181580A3002ECA4A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFDEF67181580A3002ECA4A /* CFNetwork.framework */; };
@@ -27,9 +26,9 @@
 		5EFDEF70181580CF002ECA4A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFDEF6F181580CF002ECA4A /* Security.framework */; };
 		5EFDEF72181580EB002ECA4A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFDEF71181580EA002ECA4A /* libz.dylib */; };
 		5EFDF10718159BF2002ECA4A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFDF10618159BF2002ECA4A /* CoreLocation.framework */; };
-		82922BE51B0DC4A7004FE437 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82922BE31B0DC4A7004FE437 /* Main_iPad.storyboard */; };
-		82B907D21B662EEC00E48493 /* worklight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82B907D01B662EEC00E48493 /* worklight.plist */; };
-		82B907D31B662EEC00E48493 /* WorklightAPI in Resources */ = {isa = PBXBuildFile; fileRef = 82B907D11B662EEC00E48493 /* WorklightAPI */; };
+		823B9AEC1B8C62CB00F85281 /* Universal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823B9AEB1B8C62CB00F85281 /* Universal.storyboard */; };
+		82E8A5971B8DCB0B007770D9 /* worklight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82E8A5951B8DCB0B007770D9 /* worklight.plist */; };
+		82E8A5981B8DCB0B007770D9 /* WorklightAPI in Resources */ = {isa = PBXBuildFile; fileRef = 82E8A5961B8DCB0B007770D9 /* WorklightAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +47,6 @@
 		5EFDEEDD18157966002ECA4A /* LocationServicesObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationServicesObjC-Prefix.pch"; sourceTree = "<group>"; };
 		5EFDEEDE18157966002ECA4A /* DemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoAppDelegate.h; sourceTree = "<group>"; };
 		5EFDEEDF18157966002ECA4A /* DemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoAppDelegate.m; sourceTree = "<group>"; };
-		5EFDEEE218157966002ECA4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		5EFDEEE718157966002ECA4A /* DemoAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoAppViewController.h; sourceTree = "<group>"; };
 		5EFDEEE818157966002ECA4A /* DemoAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoAppViewController.m; sourceTree = "<group>"; };
 		5EFDEEEA18157966002ECA4A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -59,9 +57,9 @@
 		5EFDEF6F181580CF002ECA4A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5EFDEF71181580EA002ECA4A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		5EFDF10618159BF2002ECA4A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		82922BE41B0DC4A7004FE437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		82B907D01B662EEC00E48493 /* worklight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = worklight.plist; sourceTree = "<group>"; };
-		82B907D11B662EEC00E48493 /* WorklightAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WorklightAPI; sourceTree = "<group>"; };
+		823B9AEB1B8C62CB00F85281 /* Universal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Universal.storyboard; sourceTree = "<group>"; };
+		82E8A5951B8DCB0B007770D9 /* worklight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = worklight.plist; sourceTree = "<group>"; };
+		82E8A5961B8DCB0B007770D9 /* WorklightAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WorklightAPI; sourceTree = "<group>"; };
 		82F7C5F91AB07A0500953B85 /* sqlcipher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sqlcipher.framework; path = WorklightAPI/Frameworks/sqlcipher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,8 +91,8 @@
 		5EFDEEC318157966002ECA4A = {
 			isa = PBXGroup;
 			children = (
-				82B907D01B662EEC00E48493 /* worklight.plist */,
-				82B907D11B662EEC00E48493 /* WorklightAPI */,
+				82E8A5951B8DCB0B007770D9 /* worklight.plist */,
+				82E8A5961B8DCB0B007770D9 /* WorklightAPI */,
 				5EFDEED518157966002ECA4A /* LocationServicesObjC */,
 				5EFDEECE18157966002ECA4A /* Frameworks */,
 				5EFDEECD18157966002ECA4A /* Products */,
@@ -137,8 +135,7 @@
 			children = (
 				5EFDEEDE18157966002ECA4A /* DemoAppDelegate.h */,
 				5EFDEEDF18157966002ECA4A /* DemoAppDelegate.m */,
-				5EFDEEE118157966002ECA4A /* Main_iPhone.storyboard */,
-				82922BE31B0DC4A7004FE437 /* Main_iPad.storyboard */,
+				823B9AEB1B8C62CB00F85281 /* Universal.storyboard */,
 				5EFDEEE718157966002ECA4A /* DemoAppViewController.h */,
 				5EFDEEE818157966002ECA4A /* DemoAppViewController.m */,
 				5EFDEEEA18157966002ECA4A /* Images.xcassets */,
@@ -185,7 +182,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = WL;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = IBM;
 			};
 			buildConfigurationList = 5EFDEEC718157966002ECA4A /* Build configuration list for PBXProject "LocationServicesObjC" */;
@@ -212,11 +209,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EFDEEEB18157966002ECA4A /* Images.xcassets in Resources */,
-				82922BE51B0DC4A7004FE437 /* Main_iPad.storyboard in Resources */,
-				5EFDEEE318157966002ECA4A /* Main_iPhone.storyboard in Resources */,
-				82B907D31B662EEC00E48493 /* WorklightAPI in Resources */,
+				82E8A5971B8DCB0B007770D9 /* worklight.plist in Resources */,
 				5EFDEEDA18157966002ECA4A /* InfoPlist.strings in Resources */,
-				82B907D21B662EEC00E48493 /* worklight.plist in Resources */,
+				82E8A5981B8DCB0B007770D9 /* WorklightAPI in Resources */,
+				823B9AEC1B8C62CB00F85281 /* Universal.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,22 +240,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		5EFDEEE118157966002ECA4A /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5EFDEEE218157966002ECA4A /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		82922BE31B0DC4A7004FE437 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				82922BE41B0DC4A7004FE437 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -267,7 +247,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -307,7 +286,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -340,12 +318,11 @@
 		5EFDEF0218157966002ECA4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/LocationServicesObjC/WorklightAPI/Frameworks",
 					"$(PROJECT_DIR)/WorklightAPI/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -355,15 +332,15 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "LocationServicesObjC/LocationServicesObjC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
-					"$(SRCROOT)/LocationServicesObjC/WorklightAPI",
 					"$(PROJECT_DIR)/WorklightAPI",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = LocationServicesObjC;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -372,12 +349,11 @@
 		5EFDEF0318157966002ECA4A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/LocationServicesObjC/WorklightAPI/Frameworks",
 					"$(PROJECT_DIR)/WorklightAPI/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -387,15 +363,15 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "LocationServicesObjC/LocationServicesObjC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
-					"$(SRCROOT)/LocationServicesObjC/WorklightAPI",
 					"$(PROJECT_DIR)/WorklightAPI",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = LocationServicesObjC;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

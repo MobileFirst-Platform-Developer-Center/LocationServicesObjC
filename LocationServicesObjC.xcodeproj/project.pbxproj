@@ -27,6 +27,7 @@
 		5EFDEF70181580CF002ECA4A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFDEF6F181580CF002ECA4A /* Security.framework */; };
 		5EFDEF72181580EB002ECA4A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFDEF71181580EA002ECA4A /* libz.dylib */; };
 		5EFDF10718159BF2002ECA4A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFDF10618159BF2002ECA4A /* CoreLocation.framework */; };
+		823B9AEC1B8C62CB00F85281 /* Universal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823B9AEB1B8C62CB00F85281 /* Universal.storyboard */; };
 		82922BE51B0DC4A7004FE437 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82922BE31B0DC4A7004FE437 /* Main_iPad.storyboard */; };
 		82B907D21B662EEC00E48493 /* worklight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82B907D01B662EEC00E48493 /* worklight.plist */; };
 		82B907D31B662EEC00E48493 /* WorklightAPI in Resources */ = {isa = PBXBuildFile; fileRef = 82B907D11B662EEC00E48493 /* WorklightAPI */; };
@@ -59,6 +60,7 @@
 		5EFDEF6F181580CF002ECA4A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5EFDEF71181580EA002ECA4A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		5EFDF10618159BF2002ECA4A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		823B9AEB1B8C62CB00F85281 /* Universal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Universal.storyboard; sourceTree = "<group>"; };
 		82922BE41B0DC4A7004FE437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		82B907D01B662EEC00E48493 /* worklight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = worklight.plist; sourceTree = "<group>"; };
 		82B907D11B662EEC00E48493 /* WorklightAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WorklightAPI; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				5EFDEEDF18157966002ECA4A /* DemoAppDelegate.m */,
 				5EFDEEE118157966002ECA4A /* Main_iPhone.storyboard */,
 				82922BE31B0DC4A7004FE437 /* Main_iPad.storyboard */,
+				823B9AEB1B8C62CB00F85281 /* Universal.storyboard */,
 				5EFDEEE718157966002ECA4A /* DemoAppViewController.h */,
 				5EFDEEE818157966002ECA4A /* DemoAppViewController.m */,
 				5EFDEEEA18157966002ECA4A /* Images.xcassets */,
@@ -217,6 +220,7 @@
 				82B907D31B662EEC00E48493 /* WorklightAPI in Resources */,
 				5EFDEEDA18157966002ECA4A /* InfoPlist.strings in Resources */,
 				82B907D21B662EEC00E48493 /* worklight.plist in Resources */,
+				823B9AEC1B8C62CB00F85281 /* Universal.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
